@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>States - Tailwind CSS for Devs in a Hurry</title>
+  </head>
+  <body
+    class="bg-neutral-800 h-screen flex justify-center items-center flex-col gap-8"
+  >
+    <button
+      class="px-4 py-2 text-white rounded transition bg-slate-600 hover:bg-slate-800 active:bg-slate-400"
+    >
+      Read More
+    </button>
+
+    <input
+      class="px-4 py-2 rounded focus:bg-zinc-500 focus:outline-none focus:text-white required:bg-yellow-600 required:placeholder:text-white"
+      type="text"
+      placeholder="Username"
+      required
+    />
+
+    <input
+      class="px-4 py-2 rounded disabled:bg-red-600 disabled:opacity-50 disabled:placeholder:text-white disabled:cursor-not-allowed"
+      type="text"
+      placeholder="Address"
+      disabled
+    />
+
+    <div
+      class="focus-within:bg-slate-300 focus-within:rounded focus-within:px-2 focus-within:py-2"
+    >
+      <input
+        class="px-4 py-2 rounded outline-none"
+        type="email"
+        placeholder="Email"
+      />
+    </div>
+  </body>
+</html>
